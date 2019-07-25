@@ -1,4 +1,8 @@
-def quick(arr, i, j):
+def quick(arr, i=0, l=-1):
+    if l == -1:
+        j = len(arr) - 1
+    else:
+        j = l
     pivot = find_pivot(arr, i, j)
     if pivot == -1:
         return arr
