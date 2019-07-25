@@ -7,6 +7,7 @@ sys.path.append(str(d))
 
 from src.quick import quick
 
+# a random list without including duplicates
 a = random.sample(list(range(0, 10)), k=10)
 b = quick(a)
 print(b)
